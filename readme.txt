@@ -6,7 +6,7 @@ Requires at least: 2.0.2
 Tested up to: 3.4
 Stable tag: 4.3
 
-With this plugin you can create 3D image galleries, videos, menus, slider or banners in a very easy.
+With this plugin/widget you can create 3D image galleries, videos, menus, slider or banners in a very easy.
 
 
 
@@ -27,7 +27,7 @@ The carousel displays the images that we indicate, but these can be linked to ot
 
 1. Upload `matrix-image-gallery` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Place [`matrix` ID] in your Posts, where ID is the gallery ID.
+3. Place [`matrix` ID] in your Posts, where ID is the gallery ID or select the matrix widget in widgets section.
 4. Configure and create new matrix image gallery in your Wordpress Admin: Settings->matrix
 5. Admin params:
 	
