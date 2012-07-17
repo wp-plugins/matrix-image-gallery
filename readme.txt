@@ -1,4 +1,4 @@
-=== MATRIX GALLERY ===
+=== MATRIX 3D ===
 Contributors: extendyourweb.com
 Donate link: http://www.extendyourweb.com/wordpress/matrix-gallery/
 Tags: images, matrix, 3d, photos, pictures, image gallery, pages, post, widget, youtube, vimeo, videos, sidebar, slider
@@ -6,14 +6,14 @@ Requires at least: 2.0.2
 Tested up to: 3.4
 Stable tag: 4.3
 
-Load the images into a 3 dimensional carousel you can see from the center of the carousel or from outside.
+With this plugin you can create 3D image galleries, videos, menus, slider or banners in a very easy.
+
+
 
 == Description ==
 
 <a href="http://www.extendyourweb.com/wordpress/matrix-image-gallery/">Live demo & Manual</a>
 
-
-With this plugin you can create image galleries, videos, menus, slider or banners in a very easy.
 
 Load the images into a 3 dimensional carousel you can see from the center of the carousel or from outside.
 

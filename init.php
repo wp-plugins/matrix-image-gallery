@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Matrix
+Plugin Name: Matrix 3D
 Plugin URI: http://www.extendyourweb.com/wordpress/matrix-image-gallery/
 Description: Create easily a gallery of videos for your site with youtube and flv videos. Extremely quickly to use, add the url of your videos.
 Version: 1.1
