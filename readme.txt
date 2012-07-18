@@ -1,25 +1,49 @@
 === MATRIX 3D ===
 Contributors: extendyourweb.com
 Donate link: http://www.extendyourweb.com/wordpress/matrix-gallery/
-Tags: images, matrix, 3d, photos, pictures, image gallery, pages, post, widget, youtube, vimeo, videos, sidebar, slider
+Tags: images, matrix, 3d, photos, pictures, image gallery, pages, post, widget, youtube, vimeo, videos, sidebar, slider, design, flash, video, html5, actionscript, jquery, banner
 Requires at least: 2.0.2
 Tested up to: 3.4
 Stable tag: 4.3
 
-With this plugin/widget you can create 3D image galleries, videos, menus, slider or banners in a very easy.
-
-
+Matrix 3d is a real 3d carousel photo and video gallery for your wordpress.
 
 == Description ==
 
 <a href="http://www.extendyourweb.com/wordpress/matrix-image-gallery/">Live demo & Manual</a>
 
+With an expectacular interface, Matrix 3d allows you show your image and video galleries in a very different way to your users, giving a personal desing, to your blog or page.
 
-Load the images into a 3 dimensional carousel you can see from the center of the carousel or from outside.
+Matrix 3d is built using ActionScript 3.0 and 3d technologies, been unique 3d real gallery.
 
-The carousel displays the images that we indicate, but these can be linked to other pages, youtube or vimeo videos. You can view images and videos using a lightbox which you have in various styles.
+Surprise your guests and highlights from your competition with this cool gallery.
 
-		
+Very easy to install, use and configure, its main features are:
+
+You can use it as:
+
+<ul>
+<li>Image gallery</li>
+<li>Video gallery</li>
+<li>Portfolio</li>
+<li>Menu</li>
+<li>Slideshow</li>
+<li>Header</li>
+<li>Banner</li>
+<li>Catalog</li>
+<li>Can be used as plugin or widget</li>
+</ul>
+
+Multiple use in same wordpress; you can add all galleries, menus, etc that you want
+Very easy to create your own desing (colours, background, speed of carousel, etc )
+
+You can configure it size, in px or in % to adjust to each part of your web
+
+Very easy to use:
+
+Don`t worry for images size!!! 3d Matrix scale your images automaticaly, and show them in best size possible.
+You can add a link, description and text title to each item.
+As gallery, images and videos be shown using a very nice lightbox.		
 
 == Installation ==
 
@@ -27,8 +51,8 @@ The carousel displays the images that we indicate, but these can be linked to ot
 
 1. Upload `matrix-image-gallery` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Place [`matrix` ID] in your Posts, where ID is the gallery ID or select the matrix widget in widgets section.
-4. Configure and create new matrix image gallery in your Wordpress Admin: Settings->matrix
+3. Configure and create new matrix image gallery in your Wordpress Admin: Settings->matrix
+4. Place [`matrix` ID] in your Posts, where ID is the gallery ID or select the matrix widget in widgets section.
 5. Admin params:
 	
 	- Images list. Add, delete and edit(url image, url link, title and description) images.
@@ -43,7 +67,7 @@ The carousel displays the images that we indicate, but these can be linked to ot
 
 == Frequently Asked Questions ==
 = What parameters should I set up to look good to me the carousel? =
-Once installed and activated, and the default plugin works correctly. The parameters are common to change the folder where you write the server folder containing the images. After adjusting the parameter row, zoom speed and get to the carousel is good. These parameters are often required to configure either because the carousel is different depending on the images you upload.
+Once installed and activated, and the default plugin works correctly.
 
 == Screenshots ==
 

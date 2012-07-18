@@ -18,55 +18,7 @@ the Free Software Foundation; either version 2 of the License, or
 
 
 
-function getYTidmatrixfreepro($ytURL) {
-#
- 
-#
-$ytvIDlen = 11; // This is the length of YouTube's video IDs
-#
- 
-#
-// The ID string starts after "v=", which is usually right after
-#
-// "youtube.com/watch?" in the URL
-#
-$idStarts = strpos($ytURL, "?v=");
-#
- 
-#
-// In case the "v=" is NOT right after the "?" (not likely, but I like to keep my
-#
-// bases covered), it will be after an "&":
-#
-if($idStarts === FALSE)
-#
-$idStarts = strpos($ytURL, "&v=");
-#
-// If still FALSE, URL doesn't have a vid ID
-#
-if($idStarts === FALSE)
-#
-die("YouTube video ID not found. Please double-check your URL.");
-#
- 
-#
-// Offset the start location to match the beginning of the ID string
-#
-$idStarts +=3;
-#
- 
-#
-// Get the ID string and return it
-#
-$ytvID = substr($ytURL, $idStarts, $ytvIDlen);
-#
- 
-#
-return $ytvID;
-#
- 
-#
-}
+
 
 
 
@@ -304,7 +256,7 @@ $timgwidth="";
 
 
 
-$texto.='title='.$titles.'&alpha='.$sizedescription.'&menu5='.str_replace("#", "", $color1).'&menu6='.str_replace("#", "", $color2).'&zoom2='.$sizetitle.'&zoom1='.$thumbnail_round.'&youtube=&onlink='.$twidth.'&rows='.$theight.'&speed='.$number_thumbnails.'&row=1&cantidad='.$cantidad.'&vertical='.$sizethumbnail.'&menu7='.str_replace("#", "", $color3).'&menu3='.$tborder.'&menu4='.$font.'&target='.$time.'&op1='.$op1.'&menu1='.$op2.'&shadow='.$op5.'&escala=1&menu2='.$op3.'&mouseover='.$round.$textovid;
+$texto.='title='.$titles.'&alpha='.$sizedescription.'&menu5='.str_replace("#", "", $color1).'&menu6='.str_replace("#", "", $color2).'&zoom2='.$sizetitle.'&zoom1='.$thumbnail_round.'&youtube=&onlink='.$twidth.'&rows='.$theight.'&speed='.$number_thumbnails.'&row=1&cantidad='.$cantidad.'&vertical='.$sizethumbnail.'&menu7='.str_replace("#", "", $color3).'&menu3='.$tborder.'&menu4='.$font.'&target='.$time.'&op1='.$op1.'&menu1='.$op2.'&shadow='.$op5.'&escala=1&menu2='.$op3.'&funct='.$nombrebox.'&mouseover='.$round.$textovid;
 
 //$texto='cantidad=6&carpeta=images2/&orientacion=&escala=1&timeback=&speed=40&border=&round=&speed2=&type=&music=&color1=1&text1=0&text2=100&text3=1&text4=1&text5=&color2=000000&text6=&color3=&target=&text7=&controls=&round2=&background='.$textovid;
 
@@ -319,7 +271,7 @@ $output='
 	 jQuery("a[rel^=\'prettyPhoto\']").prettyPhoto({theme: \''.$mode.'\'});
     
   });
-  function abrirSB(type, title, url)
+  function abrirSB'.$nombrebox.'(type, title, url)
 			 {
 				 
 				 api_images = ['.$textj.'];
