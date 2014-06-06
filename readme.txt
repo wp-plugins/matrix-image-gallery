@@ -1,16 +1,16 @@
 === MATRIX 3D ===
-Contributors: extendyourweb.com
-Donate link: http://www.extendyourweb.com/wordpress/matrix-gallery/
+Contributors: webpsilon.com
+Donate link: http://www.webpsilon.com
 Tags: images, matrix, 3d, photos, pictures, image gallery, pages, post, widget, youtube, vimeo, videos, sidebar, slider, design, flash, video, html5, actionscript, jquery, banner
 Requires at least: 2.0.2
-Tested up to: 3.4
+Tested up to: 3.9
 Stable tag: 4.3
 
 Matrix 3d is a real 3d carousel photo and video gallery for your wordpress.
 
 == Description ==
 
-<a href="http://www.extendyourweb.com/wordpress/matrix-image-gallery/">Live demo & Manual</a>
+<a href="http://webpsilon.com/matrix-plugin/">Live demo & Manual</a>
 
 With an expectacular interface, Matrix 3d allows you show your image and video galleries in a very different way to your users, giving a personal desing, to your blog or page.
 
@@ -79,5 +79,9 @@ Once installed and activated, and the default plugin works correctly.
 6. Lightbox
 
 == Changelog ==
+
+= 1.2 = 
+
+Flash load fixed, warnings fixed.
 
 = 1.1 =

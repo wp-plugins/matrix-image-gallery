@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: Matrix 3D
-Plugin URI: http://www.extendyourweb.com/wordpress/matrix-image-gallery/
+Plugin URI: http://webpsilon.com/matrix-plugin/
 Description: Create easily a gallery of videos for your site with youtube and flv videos. Extremely quickly to use, add the url of your videos.
-Version: 1.1
+Version: 1.2
 Author: Webpsilon S.C.P.
-Author URI: http://www.extendyourweb.com/wordpress
+Author URI:  http://webpsilon.com
 
-Copyright 2012 Extendyourweb.com
+Copyright 2014 Webpsilon.com
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -177,10 +177,10 @@ $cont=0;
 					
 					
 					$imagematrixfree="";
-					if($item[2]!="") $imagematrixfree=$item[2];
+					if(isset($item[2]) && $item[2]!="") $imagematrixfree=$item[2];
 					
 					
-					if($item[3]==1 && $imagematrixfree!="") {
+					if(isset($item[3]) && $item[3]==1 && $imagematrixfree!="") {
 						
 						if ($twidth==1) {
 							$textovid.='&imagen'.$cont.'='.$imagematrixfree.'&title'.$cont.'='.$item[0].'&link'.$cont.'='.$item[4];
@@ -253,6 +253,9 @@ $timgwidth="";
 //$timgwidth="width: ".($twidth*2)."px;";
 
 
+if(!isset($titles))  $titles="";
+
+if(!isset($texto))  $texto="";
 
 
 
@@ -290,32 +293,25 @@ jQuery.each(api_images2, function() {
 </script>
 <div style="'.$op4.'">
 
-<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="'.$width.'" height="'.$height.'" id="matrixfreepro'.$id.'-'.$contador.'" title="'.$title.'" align="middle">
-    <param name="movie" value="'.$urlpflash.'"/>
-	 <param name="quality" value="high" />
 
-  <param name="wmode" value="transparent" />
-
-  	<param name="flashvars" value="'.$texto.'" />
-
-	<param name="allowFullScreen" value="true" />
-    <!--[if !IE]>-->
-    <object type="application/x-shockwave-flash" data="'.$urlpflash.'" width="'.$width.'" height="'.$height.'">
-        <param name="movie" value="'.$urlpflash.'"/>
-		 <param name="quality" value="high" />
-
-  <param name="wmode" value="transparent" />
-
-  	<param name="flashvars" value="'.$texto.'" />
-
-	<param name="allowFullScreen" value="true" />
-    <!--<![endif]-->
-        <a href="http://www.adobe.com/go/getflash">
-            <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player"/>
-        </a>
-    <!--[if !IE]>-->
-    </object>
-    <!--<![endif]-->
+<object id="flashcontent" data="'.$urlpflash.'" width="'.$width.'" height="'.$height.'" type="application/x-shockwave-flash" >
+ <param name="movie" value="'.$urlpflash.'" />
+ <param name="quality" value="high" />
+ <param name="wmode" value="transparent" />
+ <param name="allowFullScreen" value="true" />
+ <param name="flashvars" value="'.$texto.'" />
+ 
+  <!--[if !IE]>-->
+  <object type="application/x-shockwave-flash" data="'.$urlpflash.'" width="'.$width.'" height="'.$height.'">
+  
+    <p>
+      Require Flash player
+    </p>
+      
+  <!--[if !IE]>-->
+  </object>
+  <!--<![endif]-->
+ 
 </object>
 </div>
 '.$ligtext;
@@ -605,7 +601,7 @@ $number_thumbnails = $myrows[$conta]->number_thumbnails;
 
 
 
-$total = $myrows[$conta]->total;
+//$total = $myrows[$conta]->total;
 
 $border = $myrows[$conta]->border;
 $round = $myrows[$conta]->round;
@@ -643,7 +639,7 @@ include('template/footer.html');
 function matrixfreepro_add_menu(){	
 	if (function_exists('add_options_page')) {
 		//add_menu_page
-		add_options_page('matrixfreepro', 'Matrix', 8, 'matrixfreepro', 'matrixfreepro_panel');
+		add_options_page('matrixfreepro', 'Matrix', 'manage_options', 'matrixfreepro', 'matrixfreepro_panel');
 	}
 }
 
